@@ -1,0 +1,55 @@
+{
+  "geode": "3.0.0",
+  "gd": {
+    "win": "2.2074",
+    "android": "2.2074",
+    "mac": "2.2074"
+  },
+  "version": "v1.0.0",
+  "id": "com.trollsurprise.trollmode",
+  "name": "Troll Mode",
+  "developer": "ClaudeTrollLabs",
+  "description": "Adds random, harmless chaos to your Geometry Dash sessions: screen wobble, fake death messages, randomized percentage text, surprise jump inversions and troll popups. Fully configurable, everything can be turned off in the mod settings.",
+  "repository": "https://github.com/example/troll-mode",
+  "tags": ["gameplay", "fun", "editor"],
+  "settings": {
+    "enabled": {
+      "name": "Enable Troll Mode",
+      "description": "Master switch. Turn this off to disable every troll effect instantly.",
+      "type": "bool",
+      "default": true
+    },
+    "troll-chance": {
+      "name": "Troll Chance (%)",
+      "description": "How likely each troll event is to trigger. Higher = more chaos.",
+      "type": "int",
+      "default": 15,
+      "min": 1,
+      "max": 100
+    },
+    "screen-wobble": {
+      "name": "Screen Wobble",
+      "description": "Randomly nudges/rotates the camera slightly while playing a level.",
+      "type": "bool",
+      "default": true
+    },
+    "fake-percentage": {
+      "name": "Fake Percentage Troll",
+      "description": "Occasionally flashes a fake (wrong) percentage number for a split second.",
+      "type": "bool",
+      "default": true
+    },
+    "troll-death-messages": {
+      "name": "Troll Death Popups",
+      "description": "Shows a random silly message in a popup after you die.",
+      "type": "bool",
+      "default": true
+    },
+    "jump-inversion": {
+      "name": "Surprise Jump Inversion",
+      "description": "Very rarely inverts your jump input for a single tap. Can make levels harder!",
+      "type": "bool",
+      "default": true
+    }
+  }
+}
